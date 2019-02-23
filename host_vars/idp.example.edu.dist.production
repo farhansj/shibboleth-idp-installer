@@ -13,11 +13,17 @@ idp_entity_id: "https://idp.example.edu/idp/shibboleth"
 idp_attribute_scope: "example.edu"
 
 # Shared federation metadata
-metadata_url: "https://md.aaf.edu.au/aaf-metadata.xml"
+metadata_url: "https://sifulan.my/metadata/metadata.xml"
+
+# Shared edugain metadata
+edugain_metadata_url: "https://sifulan.my/metadata/edugain-export-metadata.xml"
+
+# Shared test federation metadata
+test_metadata_url: "https://sifulan.my/test-metadata.xml"
 
 # Shared federation certificate
-metadata_cert_url: "https://md.aaf.edu.au/aaf-metadata-certificate.pem"
-metadata_cert_sha256sum: 00ec963039ca877b7111db3188d3d646e071c4c84ab8201fc35ad62a77ffa1a1
+metadata_cert_url: "https://sifulan.my/metadata/sifulan-signer.pem"
+#metadata_cert_sha256sum: 
 
 
 # Your organisation's name
@@ -28,14 +34,15 @@ home_organisation: "example.edu"
 
 # Your schacHomeOrganizationType. See http://www.terena.org/activities/tf-emc2/schacreleases.html
 # Relevant values are:
-# urn:mace:terena.org:schac:homeOrganizationType:au:university
-# urn:mace:terena.org:schac:homeOrganizationType:au:research-institution
-# urn:mace:terena.org:schac:homeOrganizationType:au:other
-home_organisation_type: "urn:mace:terena.org:schac:homeOrganizationType:au:university"
+# urn:mace:terena.org:schac:homeOrganizationType:my:university
+# urn:mace:terena.org:schac:homeOrganizationType:my:research-institution
+# urn:mace:terena.org:schac:homeOrganizationType:my:other
+home_organisation_type: "urn:mace:terena.org:schac:homeOrganizationType:my:university"
 
 # The federation's group id used for metadata-based attribute filtering
-federation_group_id: "https://md.aaf.edu.au/aaf-metadata.xml"
-
+federation_group_id: "urn:mace:sifulan:sifulan"
+edugain_group_id: "urn:mace:sifulan:edugain-export"
+test_federation_group_id: "urn:mace:sifulan:testfederation"
 # Run yum -update on every execution of update_idp.sh
 server_patch: "true"
 

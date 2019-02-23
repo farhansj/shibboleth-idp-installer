@@ -10,10 +10,6 @@ set -e
 #  a DNS entry for this. Do *NOT* use 'localhost' or any other local address.
 #HOST_NAME=idp.example.edu
 
-#  The federation environment
-#  Allowable values: {test, production} (case-sensitive)
-#ENVIRONMENT=test
-
 #  Your Organisation's name
 #ORGANISATION_NAME="The University of Example"
 
@@ -23,17 +19,17 @@ set -e
 #  Your schacHomeOrganizationType.
 #  See http://www.terena.org/activities/tf-emc2/schacreleases.html
 #  Relevant values are:
-#   urn:mace:terena.org:schac:homeOrganizationType:au:university
-#   urn:mace:terena.org:schac:homeOrganizationType:au:research-institution
-#   urn:mace:terena.org:schac:homeOrganizationType:au:other
-#HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:au:university
+#   urn:mace:terena.org:schac:homeOrganizationType:my:university
+#   urn:mace:terena.org:schac:homeOrganizationType:my:research-institution
+#   urn:mace:terena.org:schac:homeOrganizationType:my:other
+#HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:my:university
 
-#  The attribute used for AuEduPersonSharedToken, eduPersonTargetedId and
+#  The attribute used for eduPersonTargetedId and
 #  the persistent Name ID value generation.
 #
-#  IMPORTANT: The generation of AuEduPersonSharedToken and EduPersonTargetedId
+#  IMPORTANT: The generation of EduPersonTargetedId
 #  require the value from the specified source attribute. If the value changes,
-#  it will change the AuEduPersonSharedToken and EduPersonTargetedId. This will
+#  it will change the EduPersonTargetedId. This will
 #  cause the user to lose access in the federation. It is *critical* that you
 #  specify an attribute that will never change.
 #
@@ -136,14 +132,13 @@ LDAP_PROPERTIES=$ASSETS/idp/conf/ldap.properties
 APACHE_IDP_CONFIG=$ASSETS/apache/idp.conf
 ACTIVITY_LOG=$INSTALL_BASE/shibboleth-idp-installer/activity.log
 
-GIT_REPO=https://github.com/ausaccessfed/shibboleth-idp-installer.git
+GIT_REPO=https://github.com/farhansj/shibboleth-idp-installer.git
 GIT_BRANCH=master
 
-FR_TEST_REG=https://manager.test.aaf.edu.au/federationregistry/registration/idp
-FR_PROD_REG=https://manager.aaf.edu.au/federationregistry/registration/idp
+FR_PROD_REG=https://infohub.sifulan.my/display/SIFULAN/General+Entity+Registration+Process+and+Requirement
 
 function ensure_mandatory_variables_set {
-  for var in HOST_NAME ENVIRONMENT ORGANISATION_NAME ORGANISATION_BASE_DOMAIN \
+  for var in HOST_NAME ORGANISATION_NAME ORGANISATION_BASE_DOMAIN \
     HOME_ORG_TYPE SOURCE_ATTRIBUTE_ID INSTALL_BASE YUM_UPDATE FIREWALL \
     ENABLE_BACKCHANNEL; do
     if [ ! -n "${!var:-}" ]; then
@@ -351,7 +346,7 @@ function set_apache_ecp_ldap_properties {
 
 function create_ansible_assets {
   cd $LOCAL_REPO
-  sh create_assets.sh $HOST_NAME $ENVIRONMENT
+  sh create_assets.sh $HOST_NAME production
 }
 
 function create_apache_self_signed_certs {
@@ -382,11 +377,7 @@ function backup_shibboleth_credentials {
 }
 
 function display_fr_idp_registration_link {
-  if [ "$ENVIRONMENT" == "test" ]; then
-    echo "$FR_TEST_REG"
-  else
     echo "$FR_PROD_REG"
-  fi
 }
 
 function display_completion_message {
@@ -411,7 +402,6 @@ To make your IdP functional follow these steps:
        * For the 'Encryption Certificate' paste the contents of $SHIBBOLETH_IDP_INSTANCE/credentials/idp-encryption.crt
 
    - For 'Step 6. Supported Attributes' select the following:
-       * auEduPersonSharedToken
        * commonName
        * displayName
        * eduPersonAffiliation
@@ -422,7 +412,6 @@ To make your IdP functional follow these steps:
        * organizationName
        * surname
        * givenName
-       * eduPersonOrcid
        * eduPersonPrincipalName
        * homeOrganization
        * homeOrganizationType
@@ -431,7 +420,7 @@ To make your IdP functional follow these steps:
    indicating your IdP is pending.
 
    You should now continue with the installation steps documented at
-   http://ausaccessfed.github.io/shibboleth-idp-installer/installation.html
+   https://infohub.sifulan.my/pages/viewpage.action?pageId=3964934
 
 EOF
 }
