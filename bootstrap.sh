@@ -132,7 +132,7 @@ LDAP_PROPERTIES=$ASSETS/idp/conf/ldap.properties
 APACHE_IDP_CONFIG=$ASSETS/apache/idp.conf
 ACTIVITY_LOG=$INSTALL_BASE/shibboleth-idp-installer/activity.log
 
-GIT_REPO=https://github.com/farhansj/shibboleth-idp-installer.git
+GIT_REPO=https://github.com/sifulan-access-federation/shibboleth-idp-installer.git
 GIT_BRANCH=master
 
 FR_PROD_REG=https://infohub.sifulan.my/display/SIFULAN/General+Entity+Registration+Process+and+Requirement
@@ -435,9 +435,9 @@ function duplicate_execution_warning {
     echo -e "\n\n-----"
     echo "The bootstrap process has already been executed and could be destructive if run again."
     echo "It is likely you want to run an update instead."
-    echo "Please see http://ausaccessfed.github.io/shibboleth-idp-installer/customisation.html for further details."
+    echo "Please see https://infohub.sifulan.my/display/SIFULAN/Shibboleth+IdP for further details."
     echo -e "\n\nIn certain cases you may need to re-run the bootstrap process if you've made an error during initial installation."
-    echo "Please see http://ausaccessfed.github.io/shibboleth-idp-installer/installation.html to disable this warning."
+    echo "Please see https://infohub.sifulan.my/display/SIFULAN/Shibboleth+IdP to disable this warning."
     echo -e "-----\n\n"
     exit 0
   fi
