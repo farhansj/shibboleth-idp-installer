@@ -22,7 +22,7 @@ set -e
 #   urn:mace:terena.org:schac:homeOrganizationType:my:university
 #   urn:mace:terena.org:schac:homeOrganizationType:my:research-institution
 #   urn:mace:terena.org:schac:homeOrganizationType:my:other
-#HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:my:university
+HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:my:university
 
 #  The attribute used for eduPersonTargetedId and
 #  the persistent Name ID value generation.
