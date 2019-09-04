@@ -19,7 +19,7 @@ metadata_url: "https://sifulan.my/metadata/metadata.xml"
 edugain_metadata_url: "https://sifulan.my/metadata/edugain-export-metadata.xml"
 
 # Shared test federation metadata
-test_metadata_url: "https://sifulan.my/test-metadata.xml"
+test_metadata_url: "https://sifulan.my/metadata/test-metadata.xml"
 
 # Shared federation certificate
 metadata_cert_url: "https://sifulan.my/metadata/sifulan-signer.pem"
