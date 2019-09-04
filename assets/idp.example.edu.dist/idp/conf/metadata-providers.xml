@@ -76,7 +76,7 @@
     -->
 
     <!-- Federation metadata -->
-    <MetadataProvider id="FederationMetadata"
+    <MetadataProvider id="SIFULANFederationMetadata"
       xsi:type="FileBackedHTTPMetadataProvider"
       refreshDelayFactor="0.125"
       maxRefreshDelay="PT2H"
@@ -96,7 +96,7 @@
     </MetadataProvider>
 
     <!-- eduGAIN metadata -->
-    <MetadataProvider id="FederationMetadata"
+    <MetadataProvider id="eduGAINFederationMetadata"
       xsi:type="FileBackedHTTPMetadataProvider"
       refreshDelayFactor="0.125"
       maxRefreshDelay="PT2H"
@@ -116,7 +116,7 @@
     </MetadataProvider>
 
     <!-- Test Federation metadata -->
-    <MetadataProvider id="FederationMetadata"
+    <MetadataProvider id="TestFederationMetadata"
       xsi:type="FileBackedHTTPMetadataProvider"
       refreshDelayFactor="0.125"
       maxRefreshDelay="PT2H"
