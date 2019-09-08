@@ -217,8 +217,8 @@
 
   <DataConnector id="staticAttributes" xsi:type="Static">
     <Attribute id="eduPersonAssurance">
-      <Value>urn:mace:aaf.edu.au:iap:id:1</Value>
-      <Value>urn:mace:aaf.edu.au:iap:authn:1</Value>
+      <Value>urn:mace:sifulan.my:iap:id:1</Value>
+      <Value>urn:mace:sifulan.my:iap:authn:1</Value>
     </Attribute>
     <Attribute id="o">
       <Value>{{ organisation_name }}</Value>
