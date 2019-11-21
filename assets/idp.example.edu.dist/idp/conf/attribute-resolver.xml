@@ -194,7 +194,7 @@
   <AttributeDefinition xsi:type="Simple" id="cn">
     <InputDataConnector ref="ldap" attributeNames="cn" />
     <DisplayName xml:lang="en">Common Name</DisplayName>
-    <DisplayDescription xml:lang="en">An individual's common name. For the AAF this is defined as the users first name followed by their surname.</DisplayDescription>
+    <DisplayDescription xml:lang="en">An individual's common name.</DisplayDescription>
     <AttributeEncoder xsi:type="SAML1String" name="urn:mace:dir:attribute-def:cn" />
     <AttributeEncoder xsi:type="SAML2String" name="urn:oid:2.5.4.3" friendlyName="cn" />
   </AttributeDefinition>
