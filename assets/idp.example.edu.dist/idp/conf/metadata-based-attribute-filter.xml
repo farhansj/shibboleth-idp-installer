@@ -18,23 +18,23 @@
       </AttributeRule>
 
       <AttributeRule attributeID="displayName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonEntitlement">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonPrincipalName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonScopedAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonTargetedID">
@@ -42,39 +42,39 @@
       </AttributeRule>
 
       <AttributeRule attributeID="email">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="givenName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="homeOrganization">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="homeOrganizationType">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="organizationName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="surname">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="uid">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="commonName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="title">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
     </AttributeFilterPolicy>
@@ -93,23 +93,23 @@
       </AttributeRule>
 
       <AttributeRule attributeID="displayName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonEntitlement">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonPrincipalName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonScopedAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonTargetedID">
@@ -117,39 +117,39 @@
       </AttributeRule>
 
       <AttributeRule attributeID="email">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="givenName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="homeOrganization">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="homeOrganizationType">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="organizationName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="surname">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="uid">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="commonName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="title">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
     </AttributeFilterPolicy>
@@ -168,23 +168,23 @@
       </AttributeRule>
 
       <AttributeRule attributeID="displayName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonEntitlement">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonPrincipalName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonScopedAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonTargetedID">
@@ -192,39 +192,39 @@
       </AttributeRule>
 
       <AttributeRule attributeID="email">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="givenName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="homeOrganization">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="homeOrganizationType">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="organizationName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="surname">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="uid">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="commonName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
       <AttributeRule attributeID="title">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="true"/>
       </AttributeRule>
 
     </AttributeFilterPolicy>
