@@ -33,10 +33,10 @@ HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:my:university
 #  cause the user to lose access in the federation. It is *critical* that you
 #  specify an attribute that will never change.
 #
-# Generally use uid for most LDAP servers and sAMAccountName for MS Active 
+# Generally use uid for most LDAP servers and sAMAccountName for MS Active
 # Directoy. In some situations the directory will use cn (commonName) to hold
 # the users unique login name.
-# 
+#
 # The attribute choose MUST provide a unique single value for ALL user. If
 # this is not the case no value will be provide for the auEduPersonSharedToken.
 #
@@ -63,18 +63,18 @@ HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:my:university
 #  The adminstrator's password
 #  Note: If any of the following special characters appear in your
 #        password you must add an escape "\" before each one.
-#        The special characters are 
-#           - $ (Dollars), 
+#        The special characters are
+#           - $ (Dollars),
 #           - " (Double quote),
-#           - / (Forward Slash) 
+#           - / (Forward Slash)
 #        Back Slash MUST never be used!
 #  The password: 'ReQ$-"/xxp4' would be entered as 'ReQ\$-\"\/xxp4'
 #
 #LDAP_BIND_DN_PASSWORD="p@ssw0rd"
 
 #  Specify the attribute for user queries
-# 
-# Generally use uid for most LDAP servers and sAMAccountName for MS Active 
+#
+# Generally use uid for most LDAP servers and sAMAccountName for MS Active
 # Directoy. In some situations the directory will use cn (commonName) to hold
 # the users unique login name.
 #
@@ -85,34 +85,34 @@ HOME_ORG_TYPE=urn:mace:terena.org:schac:homeOrganizationType:my:university
 
 # The base path for Shibboleth and the IdP Installer configuration.
 # Changing the base path MUST only occur here, do not attempt to change
-# the base after the initial install. 
+# the base after the initial install.
 INSTALL_BASE=/opt
 
-# Select the local Firewall that will be running on your server. The default 
+# Select the local Firewall that will be running on your server. The default
 # is firewalld which is the default for CentOS and RHEL 7. Some organisations
-# have selected to maintain iptables. You can also select to not have the 
-# installer maintain your local firewall but this is definitly NOT recommeded. 
+# have selected to maintain iptables. You can also select to not have the
+# installer maintain your local firewall but this is definitly NOT recommeded.
 # Relevant values are:
 #    firewalld (default)
-#       Adds ports 433 (https) and 8443 (IdP backchannel) ports to the 
+#       Adds ports 433 (https) and 8443 (IdP backchannel) ports to the
 #       firewalld config. All other configuration remains unchanged.
 #    iptables
 #       Adds ports 22 (ssh), 443 (https) and 8443 (IdP backchannel) ports
 #       to the iptables config. Other firewall settings may be overwritten!
 #    none
 #       You are responsible for the maintance of the servers firewall. No
-#       changes to the local firewall are made in this mode. 
+#       changes to the local firewall are made in this mode.
 #
 FIREWALL=firewalld
 
-# 
+#
 
 # The Shibboleth IdP can provide a back channel for Service Providers to
-# communicate directly with the Identity Provider. This has been used for 
+# communicate directly with the Identity Provider. This has been used for
 # attribute release, transmission of messages via SAML Artifact and more recently
-# for backchannel SLO. The AAF have idenified that none of the use cases for
-# the backchannel are relivant to operation within the AAF, and therefor 
-# recommend it no longer be enable be default. If it is required, for example 
+# for backchannel SLO. The SIFULAN have idenified that none of the use cases for
+# the backchannel are relivant to operation within the SIFULAN, and therefor 
+# recommend it no longer be enable be default. If it is required, for example
 # for a standalone Attribute Authority service, then setting the following to true
 # will enable configuration for the backchannel.
 ENABLE_BACKCHANNEL=false
@@ -190,7 +190,7 @@ function install_yum_dependencies {
     yum -y update
   else
     count_updates=`yum check-update --quiet | grep '^[a-Z0-9]' | wc -l`
-   
+
     echo "WARNING: Automatic server software updates performed by this"
     echo "         installer have been disabled!"
     echo ""
@@ -517,4 +517,3 @@ function bootstrap {
 }
 
 bootstrap
-
