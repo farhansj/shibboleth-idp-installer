@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-    This file is an EXAMPLE policy file.  While the policy presented in this 
+<!--
+    This file is an EXAMPLE policy file.  While the policy presented in this
     example file is illustrative of some simple cases, it relies on the names of
     non-existent example services and the example attributes demonstrated in the
     default attribute-resolver.xml file.
 
     This example does contain some usable "general purpose" policies that may be
     useful in conjunction with specific deployment choices, but those policies may
-    not be applicable to your specific needs or constraints.    
+    not be applicable to your specific needs or constraints.
 -->
 <AttributeFilterPolicyGroup id="ShibbolethFilterPolicy"
         xmlns="urn:mace:shibboleth:2.0:afp"
@@ -20,14 +20,14 @@
     -->
 	<AttributeFilterPolicy id="Per-Attribute-singleValued">
 	    <PolicyRequirementRule xsi:type="ANY" />
-	 
+
 	    <AttributeRule attributeID="eduPersonPrincipalName">
 	        <PermitValueRule xsi:type="EntityAttributeExactMatch"
 	            attributeName="http://shibboleth.net/ns/attributes/releaseAllValues"
 	            attributeNameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
 	            attributeValue="eduPersonPrincipalName" />
 	    </AttributeRule>
-	 
+
 	    <AttributeRule attributeID="mail">
 	        <PermitValueRule xsi:type="EntityAttributeExactMatch"
 	            attributeName="http://shibboleth.net/ns/attributes/releaseAllValues"
@@ -44,7 +44,7 @@
             attributeName="http://shibboleth.net/ns/attributes/releaseAllValues"
             attributeNameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
             attributeValue="eduPersonScopedAffiliation" />
-     
+
         <AttributeRule attributeID="eduPersonScopedAffiliation" permitAny="true" />
     </AttributeFilterPolicy>
 
@@ -77,13 +77,15 @@
     </AttributeFilterPolicy>
 
     <!-- Release an additional attribute to an SP. -->
+    <!--
     <AttributeFilterPolicy id="example1">
         <PolicyRequirementRule xsi:type="Requester" value="https://sp.example.org" />
 
         <AttributeRule attributeID="uid" permitAny="true" />
     </AttributeFilterPolicy>
-
+    -->
     <!-- Release eduPersonScopedAffiliation to two specific SPs. -->
+    <!--
     <AttributeFilterPolicy id="example2">
         <PolicyRequirementRule xsi:type="OR">
             <Rule xsi:type="Requester" value="https://sp.example.org" />
@@ -92,22 +94,23 @@
 
         <AttributeRule attributeID="eduPersonScopedAffiliation" permitAny="true" />
     </AttributeFilterPolicy>
-    
-<AttributeFilterPolicy id="releaseDynamicSubsetRandSAttributeBundle">
-   
+  -->
+
+  <AttributeFilterPolicy id="releaseDynamicSubsetRandSAttributeBundle">
+
   <!-- for Shib IdP V3, use type EntityAttributeExactMatch instead -->
-  
+
   <PolicyRequirementRule xsi:type="EntityAttributeExactMatch"
       attributeName="http://macedir.org/entity-category"
       attributeValue="http://refeds.org/category/research-and-scholarship"/>
- 
+
   <!-- a dynamic subset of the Research & Scholarship Attribute Bundle -->
-   
+
   <!-- release ePPN iff ePPN is listed in metadata -->
   <AttributeRule attributeID="eduPersonPrincipalName">
     <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
   </AttributeRule>
- 
+
   <!-- release ePTID iff either ePTID or ePPN are listed in metadata -->
   <AttributeRule attributeID="eduPersonTargetedID">
     <PermitValueRule xsi:type="OR">
@@ -116,14 +119,14 @@
           attributeName="urn:oid:1.3.6.1.4.1.5923.1.1.1.6"/>
     </PermitValueRule>
   </AttributeRule>
- 
+
   <!-- if ePPN is non-reassigned, the above rule may be simplified or even commented out since ePTID is optional -->
- 
+
   <!-- release mail iff mail is listed in metadata -->
   <AttributeRule attributeID="email">
     <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
   </AttributeRule>
- 
+
   <!-- release displayName iff displayName or (givenName + sn) are listed in metadata -->
   <AttributeRule attributeID="displayName">
     <PermitValueRule xsi:type="OR">
@@ -136,7 +139,7 @@
       </Rule>
     </PermitValueRule>
   </AttributeRule>
- 
+
   <!-- release givenName iff givenName or displayName are listed in metadata -->
   <AttributeRule attributeID="givenName">
     <PermitValueRule xsi:type="OR">
@@ -145,7 +148,7 @@
           attributeName="urn:oid:2.16.840.1.113730.3.1.241"/>
     </PermitValueRule>
   </AttributeRule>
- 
+
   <!-- release surname iff surname or displayName are listed in metadata -->
   <AttributeRule attributeID="surname">
     <PermitValueRule xsi:type="OR">
@@ -154,14 +157,14 @@
           attributeName="urn:oid:2.16.840.1.113730.3.1.241"/>
     </PermitValueRule>
   </AttributeRule>
- 
+
   <!-- release ePSA iff ePSA is listed in metadata -->
   <AttributeRule attributeID="eduPersonScopedAffiliation">
     <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
   </AttributeRule>
- 
+
   <!-- since ePSA is OPTIONAL, the above rule may be commented out -->
-  
+
 </AttributeFilterPolicy>
-    
+
 </AttributeFilterPolicyGroup>
