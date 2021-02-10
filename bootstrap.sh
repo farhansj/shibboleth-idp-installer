@@ -133,7 +133,7 @@ APACHE_IDP_CONFIG=$ASSETS/apache/idp.conf
 ACTIVITY_LOG=$INSTALL_BASE/shibboleth-idp-installer/activity.log
 
 GIT_REPO=https://github.com/sifulan-access-federation/shibboleth-idp-installer.git
-GIT_BRANCH=master
+GIT_BRANCH=v4
 
 FR_PROD_REG=https://infohub.sifulan.my/display/SIFULAN/General+Entity+Registration+Process+and+Requirement
 

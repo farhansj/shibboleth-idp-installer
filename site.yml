@@ -10,8 +10,8 @@
         sha256sum: c66abd7323f6df5b28690e145d2ae829dbd12b8a2923266fa23ab5139a9303c5
       shib_idp:
         baseurl: "{{ sifulan_binaries.baseurl }}/shibboleth"
-        version: 3.4.3
-        sha256sum: eb86bc7b6366ce2a44f97cae1b014d307b84257e3149469b22b2d091007309db
+        version: 4.0.1
+        sha256sum: 832f73568c5b74a616332258fd9dc555bb20d7dd9056c18dc0ccf52e9292102a
       mysql_connector:
         baseurl: "{{ sifulan_binaries.baseurl }}/jars/Connector-J"
         version: 8.0.13
