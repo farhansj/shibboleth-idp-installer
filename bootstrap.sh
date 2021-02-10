@@ -470,7 +470,7 @@ function correct_python_package_warning {
   if [ $retval -ne 0 ]
    then
      yum -y install python-pip
-     pip install --upgrade pip
+     pip install --upgrade pip "pip < 21.0"
      pip install --upgrade requests
 
      test_python_package_warning
